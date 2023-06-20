@@ -1,0 +1,89 @@
+*{margin: 0; padding: 0;}
+body{
+    height: 3000px;
+}
+
+.top_btn{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    opacity: 0;
+}
+
+.img_box,
+.txt_box,
+.not_box
+{
+    width: 940px;
+    height: 300px;
+    margin: 200px auto;
+    display: flex;
+}
+
+.img_box div,
+.txt_box div,
+.not_box div
+{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.img_box div:nth-child(2),
+.txt_box div:nth-child(2),
+.not_box div:nth-child(2)
+{
+    margin: 0 20px;
+}
+
+
+/*  visual_swiepr   */
+.swiper{
+    width: 900px; height: 300px;
+}
+
+.swiper .swiper-wrapper .swiper-slide{
+    width: 900px; height: 300px;
+
+}
+
+.swiper .swiper-wrapper .swiper-slide img{
+    width: 100%; height: 100%;
+}
+
+.swiper .swiper-pagination-bullet{
+    width: 50px; height: 50px;
+    background-color: white;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background-color:  red;
+}
+
+
+.show .orgin{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.show .not01{
+    transition-delay: 0s;
+}
+
+.show .not02{
+    transition-delay: 0.5s;
+}
+
+.show .not03{
+    transition-delay: 1s;
+}
